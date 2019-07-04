@@ -154,7 +154,7 @@ return [
             |
             */
 
-            'guid_column' => 'objectguid',
+            'guid_column' => 'id',
 
             /*
             |--------------------------------------------------------------------------
@@ -171,7 +171,7 @@ return [
             |
             */
 
-            'username_column' => 'email',
+            'username_column' => 'username',
 
         ],
 
@@ -288,10 +288,9 @@ return [
     */
 
     'sync_attributes' => [
-
-        'email' => 'userprincipalname',
-
-        'name' => 'cn',
+        'username' => 'userprincipalname',
+        'first' => 'givenName',
+        'last' => 'sn',
 
     ],
 
